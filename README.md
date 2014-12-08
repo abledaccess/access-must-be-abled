@@ -8,3 +8,4 @@ Essentially all these "features" are is additions to the Twenty Fourteen theme t
 
 - Syntactically Awesome Style Sheets (Sass) functionality.
 - Category context helpers. More information to help users understand the words appearing above a post titles are in fact categories which the post has been filed under. Simply accomplished addition of the words 'categorized under'.
+- A more descriptive 'read more' link on the index, archive and search pages to give the user more information as to what they're going to read more of should they follow the link.
