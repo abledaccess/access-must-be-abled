@@ -7,8 +7,8 @@
  * @link http://codex.wordpress.org/Widgets_API#Developing_Widgets
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage Abled_Twenty_Fourteen
+ * @since Abled Twenty Fourteen 1.0
  */
 
 class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
@@ -17,7 +17,7 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 	 * The supported post formats.
 	 *
 	 * @access private
-	 * @since Twenty Fourteen 1.0
+	 * @since Abled Twenty Fourteen 1.0
 	 *
 	 * @var array
 	 */
@@ -26,7 +26,7 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 	/**
 	 * Constructor.
 	 *
-	 * @since Twenty Fourteen 1.0
+	 * @since Abled Twenty Fourteen 1.0
 	 *
 	 * @return Twenty_Fourteen_Ephemera_Widget
 	 */
@@ -41,7 +41,7 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 	 * Output the HTML for this widget.
 	 *
 	 * @access public
-	 * @since Twenty Fourteen 1.0
+	 * @since Abled Twenty Fourteen 1.0
 	 *
 	 * @param array $args     An array of standard parameters for widgets in this theme.
 	 * @param array $instance An array of settings for this widget instance.
@@ -224,7 +224,7 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 	 *
 	 * Here is where any validation should happen.
 	 *
-	 * @since Twenty Fourteen 1.0
+	 * @since Abled Twenty Fourteen 1.0
 	 *
 	 * @param array $new_instance New widget instance.
 	 * @param array $instance     Original widget instance.
@@ -243,7 +243,7 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 	/**
 	 * Display the form for this widget on the Widgets page of the Admin area.
 	 *
-	 * @since Twenty Fourteen 1.0
+	 * @since Abled Twenty Fourteen 1.0
 	 *
 	 * @param array $instance
 	 */

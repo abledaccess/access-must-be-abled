@@ -3,14 +3,14 @@
  * Implement Custom Header functionality for Twenty Fourteen
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage Abled_Twenty_Fourteen
+ * @since Abled Twenty Fourteen 1.0
  */
 
 /**
  * Set up the WordPress core custom header settings.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  *
  * @uses twentyfourteen_header_style()
  * @uses twentyfourteen_admin_header_style()
@@ -20,7 +20,7 @@ function twentyfourteen_custom_header_setup() {
 	/**
 	 * Filter Twenty Fourteen custom-header support arguments.
 	 *
-	 * @since Twenty Fourteen 1.0
+	 * @since Abled Twenty Fourteen 1.0
 	 *
 	 * @param array $args {
 	 *     An array of custom-header support arguments.
@@ -94,7 +94,7 @@ if ( ! function_exists( 'twentyfourteen_admin_header_style' ) ) :
  *
  * @see twentyfourteen_custom_header_setup()
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  */
 function twentyfourteen_admin_header_style() {
 ?>
@@ -132,7 +132,7 @@ if ( ! function_exists( 'twentyfourteen_admin_header_image' ) ) :
  *
  * @see twentyfourteen_custom_header_setup()
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  */
 function twentyfourteen_admin_header_image() {
 ?>

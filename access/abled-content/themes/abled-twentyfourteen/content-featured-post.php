@@ -3,8 +3,8 @@
  * The template for displaying featured posts on the front page
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage Abled_Twenty_Fourteen
+ * @since Abled Twenty Fourteen 1.0
  */
 ?>
 

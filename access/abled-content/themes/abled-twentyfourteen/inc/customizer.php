@@ -3,14 +3,14 @@
  * Twenty Fourteen Theme Customizer support
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage Abled_Twenty_Fourteen
+ * @since Abled Twenty Fourteen 1.0
  */
 
 /**
  * Implement Theme Customizer additions and adjustments.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
@@ -61,7 +61,7 @@ add_action( 'customize_register', 'twentyfourteen_customize_register' );
 /**
  * Sanitize the Featured Content layout value.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  *
  * @param string $layout Layout type.
  * @return string Filtered layout type (grid|slider).
@@ -77,7 +77,7 @@ function twentyfourteen_sanitize_layout( $layout ) {
 /**
  * Bind JS handlers to make Theme Customizer preview reload changes asynchronously.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  */
 function twentyfourteen_customize_preview_js() {
 	wp_enqueue_script( 'twentyfourteen_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20131205', true );
@@ -87,7 +87,7 @@ add_action( 'customize_preview_init', 'twentyfourteen_customize_preview_js' );
 /**
  * Add contextual help to the Themes and Post edit screens.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  */
 function twentyfourteen_contextual_help() {
 	if ( 'admin_head-edit.php' === current_filter() && 'post' !== $GLOBALS['typenow'] ) {

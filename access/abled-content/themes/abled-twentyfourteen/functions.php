@@ -21,8 +21,8 @@
  * @link http://codex.wordpress.org/Plugin_API
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage Abled_Twenty_Fourteen
+ * @since Abled Twenty Fourteen 1.0
  */
 
 /**
@@ -30,7 +30,7 @@
  *
  * @see twentyfourteen_content_width()
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  */
 if ( ! isset( $content_width ) ) {
 	$content_width = 474;
@@ -53,7 +53,7 @@ if ( ! function_exists( 'twentyfourteen_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support post thumbnails.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  */
 function twentyfourteen_setup() {
 
@@ -120,7 +120,7 @@ add_action( 'after_setup_theme', 'twentyfourteen_setup' );
 /**
  * Adjust content_width value for image attachment template.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  */
 function twentyfourteen_content_width() {
 	if ( is_attachment() && wp_attachment_is_image() ) {
@@ -132,7 +132,7 @@ add_action( 'template_redirect', 'twentyfourteen_content_width' );
 /**
  * Getter function for Featured Content Plugin.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  *
  * @return array An array of WP_Post objects.
  */
@@ -140,7 +140,7 @@ function twentyfourteen_get_featured_posts() {
 	/**
 	 * Filter the featured posts to return in Twenty Fourteen.
 	 *
-	 * @since Twenty Fourteen 1.0
+	 * @since Abled Twenty Fourteen 1.0
 	 *
 	 * @param array|bool $posts Array of featured posts, otherwise false.
 	 */
@@ -150,7 +150,7 @@ function twentyfourteen_get_featured_posts() {
 /**
  * A helper conditional function that returns a boolean value.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  *
  * @return bool Whether there are featured posts.
  */
@@ -161,7 +161,7 @@ function twentyfourteen_has_featured_posts() {
 /**
  * Register three Twenty Fourteen widget areas.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  */
 function twentyfourteen_widgets_init() {
 	require get_template_directory() . '/inc/widgets.php';
@@ -200,7 +200,7 @@ add_action( 'widgets_init', 'twentyfourteen_widgets_init' );
 /**
  * Register Lato Google font for Twenty Fourteen.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  *
  * @return string
  */
@@ -220,7 +220,7 @@ function twentyfourteen_font_url() {
 /**
  * Enqueue scripts and styles for the front end.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  */
 function twentyfourteen_scripts() {
 	// Add Lato font, used in the main stylesheet.
@@ -263,7 +263,7 @@ add_action( 'wp_enqueue_scripts', 'twentyfourteen_scripts' );
 /**
  * Enqueue Google fonts style to admin screen for custom header display.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  */
 function twentyfourteen_admin_fonts() {
 	wp_enqueue_style( 'twentyfourteen-lato', twentyfourteen_font_url(), array(), null );
@@ -274,14 +274,14 @@ if ( ! function_exists( 'twentyfourteen_the_attached_image' ) ) :
 /**
  * Print the attached image with a link to the next attached image.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  */
 function twentyfourteen_the_attached_image() {
 	$post                = get_post();
 	/**
 	 * Filter the default Twenty Fourteen attachment size.
 	 *
-	 * @since Twenty Fourteen 1.0
+	 * @since Abled Twenty Fourteen 1.0
 	 *
 	 * @param array $dimensions {
 	 *     An array of height and width dimensions.
@@ -341,7 +341,7 @@ if ( ! function_exists( 'twentyfourteen_list_authors' ) ) :
 /**
  * Print a list of all site contributors who published at least one post.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  */
 function twentyfourteen_list_authors() {
 	$contributor_ids = get_users( array(
@@ -392,7 +392,7 @@ endif;
  * 6. Single views.
  * 7. Featured content layout.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  *
  * @param array $classes A list of existing body class values.
  * @return array The filtered body class list.
@@ -443,7 +443,7 @@ add_filter( 'body_class', 'twentyfourteen_body_classes' );
  * Adds a post class to denote:
  * Non-password protected page with a post thumbnail.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  *
  * @param array $classes A list of existing post class values.
  * @return array The filtered post class list.
@@ -461,7 +461,7 @@ add_filter( 'post_class', 'twentyfourteen_post_classes' );
  * Create a nicely formatted and more specific title element text for output
  * in head of document, based on current view.
  *
- * @since Twenty Fourteen 1.0
+ * @since Abled Twenty Fourteen 1.0
  *
  * @global int $paged WordPress archive pagination page count.
  * @global int $page  WordPress paginated post page count.
