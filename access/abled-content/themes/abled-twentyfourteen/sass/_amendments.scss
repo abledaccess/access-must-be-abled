@@ -3,6 +3,18 @@
  * -----------------------------------------------------------------------------
  */
 
+h1.site-title,
+.site-title,
+h2.site-description,
+.site-description {
+	clear: none;
+}
+.site-description {
+	float: left;
+	margin: 0;
+	padding: 18px 18px 12px 18px;
+}
+
 .entry-content,
 .entry-summary,
 .page-content,
