@@ -42,12 +42,13 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="header-main">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'h2'; ?>
+			<<?php echo $heading_tag; ?> class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></<?php echo $heading_tag; ?>>
 			<?php
 				$description = get_bloginfo( 'description', 'display' );
 				if ( ! empty ( $description ) ) :
 			?>
-			<h2 class="site-description"><?php echo esc_html( $description ); ?></h2>
+			<p class="site-description tag-line"><?php echo esc_html( $description ); ?></p>
 			<?php endif; ?>
 
 			<div class="search-toggle">

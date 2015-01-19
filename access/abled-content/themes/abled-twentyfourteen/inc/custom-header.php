@@ -140,7 +140,7 @@ function twentyfourteen_admin_header_image() {
 		<?php if ( get_header_image() ) : ?>
 		<img src="<?php header_image(); ?>" alt="">
 		<?php endif; ?>
-		<h1 class="displaying-header-text"><a id="name"<?php echo sprintf( ' style="color:#%s;"', get_header_textcolor() ); ?> onclick="return false;" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+		<h2 class="displaying-header-text"><a id="name"<?php echo sprintf( ' style="color:#%s;"', get_header_textcolor() ); ?> onclick="return false;" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h2>
 	</div>
 <?php
 }

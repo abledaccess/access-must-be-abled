@@ -11,3 +11,4 @@ Essentially all these "features" are is additions to the Twenty Fourteen theme t
 - A more descriptive 'read more' link on the index, archive and search pages to give the user more information as to what they're going to read more of should they follow the link.
 - Forced hyphenation -- as hyphenation *may* prove to add difficulty from some users when reading. 
 - The 'page title' and 'site description' appear together in the mark-up providing users using a "less-traditional" means of access, like a screen reader for instance, a less disjointed experience.
+- More semantically structured headings (h1 being the most important heading on a page and h6 being the least, while everything else being graded in between).

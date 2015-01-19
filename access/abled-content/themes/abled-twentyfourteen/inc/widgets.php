@@ -106,9 +106,9 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 
 			echo $args['before_widget'];
 			?>
-			<h1 class="widget-title <?php echo esc_attr( $format ); ?>">
+			<h2 class="widget-title <?php echo esc_attr( $format ); ?>">
 				<a class="entry-format" href="<?php echo esc_url( get_post_format_link( $format ) ); ?>"><?php echo $title; ?></a>
-			</h1>
+			</h2>
 			<ol>
 
 				<?php
