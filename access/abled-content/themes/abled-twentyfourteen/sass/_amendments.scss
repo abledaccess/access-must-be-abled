@@ -118,14 +118,10 @@ h2.site-description,
 	margin-bottom: 48px;
 }
 .list-view .site-content .entry-header,
-.page .entry-content {
+.page .entry-content,
+.search .page-content {
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	padding-top: 48px;
-}
-.home .hentry,
-.archive .hentry,
-.search .hentry {
-	margin-bottom: 0;
 }
 .page-header,
 .archive-header {
@@ -149,4 +145,48 @@ h2.site-description,
 }
 .search-box-wrapper {
 	padding-left: 0;
+}
+.search-header,
+.none-header {
+	max-width: 474px;
+	margin: 24px auto;
+}
+.search-title,
+.none-title {
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 1.5;
+	margin: 0;
+}
+.archive-title,
+.search-title,
+.none-title {
+	text-transform: uppercase;
+}
+input {
+	padding-right: 0;
+}
+@media screen and (min-width: 401px) {
+	.home .hentry,
+	.archive .hentry,
+	.search .hentry {
+		margin-bottom: 0;
+	}
+	.search-header,
+	.none-header {
+		margin: 0 auto 24px;
+	}
+}
+@media screen and (min-width: 673px) {
+	.search-header,
+	.none-header {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+}
+@media screen and (min-width: 1218px) {
+	.search-header,
+	.none-header {
+		margin-right: 54px;
+	}
 }

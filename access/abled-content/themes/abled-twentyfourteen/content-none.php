@@ -8,8 +8,8 @@
  */
 ?>
 
-<header class="page-header">
-	<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyfourteen' ); ?></h1>
+<header class="none-header">
+	<h1 class="none-title"><?php _e( 'Oops, Nothing Found Here', 'twentyfourteen' ); ?></h1>
 </header>
 
 <div class="page-content">
@@ -19,7 +19,7 @@
 
 	<?php elseif ( is_search() ) : ?>
 
-	<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyfourteen' ); ?></p>
+	<p><?php _e( 'Oops, nothing matched your search terms. Please try again with some different keywords below.', 'twentyfourteen' ); ?></p>
 	<?php get_search_form(); ?>
 
 	<?php else : ?>

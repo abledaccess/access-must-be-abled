@@ -14,8 +14,8 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : ?>
 
-			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Search Results for: %s', 'twentyfourteen' ), get_search_query() ); ?></h1>
+			<header class="search-header">
+				<h1 class="search-title"><?php printf( __( 'Search Results for: %s', 'twentyfourteen' ), get_search_query() ); ?></h1>
 			</header><!-- .page-header -->
 
 				<?php
@@ -35,7 +35,7 @@ get_header(); ?>
 
 				else :
 					// If no content, include the "No posts found" template.
-					get_template_part( 'content-archive', 'none' );
+					get_template_part( 'content', 'none' );
 
 				endif;
 			?>

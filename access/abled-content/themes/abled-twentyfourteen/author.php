@@ -60,7 +60,7 @@ get_header(); ?>
 
 				else :
 					// If no content, include the "No posts found" template.
-					get_template_part( 'content-archive', 'none' );
+					get_template_part( 'content', 'none' );
 
 				endif;
 			?>
