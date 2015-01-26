@@ -28,6 +28,10 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
+			<header class="page-header">
+				<h2 class="page-title">Blog</h2>
+			</header><!-- .page-header -->
+
 		<?php
 			if ( have_posts() ) :
 				// Start the Loop.

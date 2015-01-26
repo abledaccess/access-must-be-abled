@@ -20,12 +20,14 @@ h1.site-title,
 h2.site-description,
 .site-description {
 	clear: none;
+	text-transform: lowercase;
 }
 .site-description {
-	color: #ccc;
+	color: #fff;
 	float: left;
 	margin: 0;
 	padding: 18px 18px 12px 18px;
+	text-transform: lowercase;
 }
 
 .site:before {
@@ -100,4 +102,51 @@ h2.site-description,
 	.primary-sidebar{
 		padding-top: 55px;
 	}
+}
+
+.entry-meta,
+.entry-meta a {
+	color: #2b2b2b;
+}
+.entry-title {
+	font-weight: 400;
+}
+.list-view .site-content .hentry {
+	border-top: 0;
+}
+.list-view .site-content .hentry:last-child {
+	margin-bottom: 48px;
+}
+.list-view .site-content .entry-header,
+.page .entry-content {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	padding-top: 48px;
+}
+.home .hentry,
+.archive .hentry,
+.search .hentry {
+	margin-bottom: 0;
+}
+.page-header,
+.archive-header {
+	margin-bottom: 24px;
+}
+.page-title {
+	font-weight: 700;
+	font-size: 33px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.single .page-title {
+	margin-bottom: 12px;
+}
+.entry-content a,
+.comments-area a {
+	font-weight: 600;
+}
+.entry-sub-head {
+	text-transform: uppercase;
+}
+.search-box-wrapper {
+	padding-left: 0;
 }

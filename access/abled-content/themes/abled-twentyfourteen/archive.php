@@ -24,8 +24,8 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title">
+			<header class="archive-header">
+				<h1 class="archive-title">
 					<?php
 						if ( is_day() ) :
 							printf( __( 'Daily Archives: %s', 'twentyfourteen' ), get_the_date() );
@@ -53,7 +53,7 @@ get_header(); ?>
 						 * use this in a child theme, then include a file called called content-___.php
 						 * (where ___ is the post format) and that will be used instead.
 						 */
-						get_template_part( 'content-index', get_post_format() );
+						get_template_part( 'content-archive', get_post_format() );
 
 					endwhile;
 					// Previous/next page navigation.
@@ -61,7 +61,7 @@ get_header(); ?>
 
 				else :
 					// If no content, include the "No posts found" template.
-					get_template_part( 'content-index', 'none' );
+					get_template_part( 'content-archive', 'none' );
 
 				endif;
 			?>
