@@ -11,20 +11,15 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php twentyfourteen_post_thumbnail(); ?>
 
-	<header class="page-header">
-		<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && twentyfourteen_categorized_blog() ) : ?>
-		<div class="entry-meta">
-			<span class="cat-links">Categorized Under: <?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfourteen' ) ); ?></span>
-		</div>
+	<header class="entry-header">
 		<?php
-			endif;
-
-			the_title( '<h1 class="page-title">', '</h1>' );
-
+			the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
 		?>
 
 		<div class="entry-meta">
+			<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && twentyfourteen_categorized_blog() ) : ?><span class="cat-links">Categorized Under: <?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfourteen' ) ); ?></span>
 			<?php
+				endif;
 				if ( 'post' == get_post_type() )
 					twentyfourteen_posted_on();
 

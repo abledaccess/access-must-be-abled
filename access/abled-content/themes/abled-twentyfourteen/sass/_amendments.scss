@@ -133,8 +133,8 @@ h2.site-description,
 	line-height: 1;
 	text-transform: uppercase;
 }
-.single .page-title {
-	margin-bottom: 12px;
+h1.entry-title {
+	font-weight: 700;
 }
 .entry-content a,
 .comments-area a {
@@ -189,4 +189,18 @@ input {
 	.none-header {
 		margin-right: 54px;
 	}
+}
+
+.entry-title {
+	padding-top: 24px;
+}
+.entry-header {
+	position: relative;
+}
+.cat-links {
+	position: absolute;
+	top: 48px;
+}
+.single .cat-links {
+	top: 0;
 }
