@@ -119,7 +119,8 @@ h2.site-description,
 }
 .list-view .site-content .entry-header,
 .page .entry-content,
-.search .page-content {
+.search .page-content,
+.error404 .page-content {
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	padding-top: 48px;
 }
@@ -140,9 +141,6 @@ h1.entry-title {
 .comments-area a {
 	font-weight: 600;
 }
-.entry-sub-head {
-	text-transform: uppercase;
-}
 .search-box-wrapper {
 	padding-left: 0;
 }
@@ -160,7 +158,8 @@ h1.entry-title {
 }
 .archive-title,
 .search-title,
-.none-title {
+.none-title,
+.entry-sub-head {
 	text-transform: uppercase;
 }
 input {
@@ -203,4 +202,35 @@ input {
 }
 .single .cat-links {
 	top: 0;
+}
+
+.search-box .search-field {
+	width: 70%;
+}
+label {
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.site-header label {
+	color: #fff;
+	display: inline;
+}
+.site-header .search-field {
+	margin-left: 8px;
+}
+.site-header .search-form {
+	text-align: right;
+}
+.page-content .search-field {
+	margin-top: 12px;
+}
+.page-content label {
+	font-size: 16px;
+}
+@media screen and (min-width: 783px) {
+	.search-box .search-field {
+		width: 26.25%;
+	}
 }
