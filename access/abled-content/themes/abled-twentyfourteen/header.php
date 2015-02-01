@@ -42,7 +42,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="header-main">
-			<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'h2'; ?>
+			<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'p'; ?>
 			<<?php echo $heading_tag; ?> class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></<?php echo $heading_tag; ?>>
 			<?php
 				$description = get_bloginfo( 'description', 'display' );

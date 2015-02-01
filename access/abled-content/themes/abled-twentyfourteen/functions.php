@@ -168,8 +168,8 @@ function twentyfourteen_widgets_init() {
 	register_widget( 'Twenty_Fourteen_Ephemera_Widget' );
 
 	register_sidebar( array(
-		'name'          => __( 'Primary Compacted Sidebar', 'twentyfourteen' ),
-		'id'            => 'compacted-sidebar-1',
+		'name'          => __( 'Primary Sidebar', 'twentyfourteen' ),
+		'id'            => 'sidebar-1',
 		'description'   => __( 'Main sidebar content that is forced below content at narrow viewports.', 'twentyfourteen' ),
 		'before_widget' => '<aside id="%1$s" class="widget compacted %2$s">',
 		'after_widget'  => '</aside>',
@@ -177,8 +177,8 @@ function twentyfourteen_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Primary Expanded Sidebar', 'twentyfourteen' ),
-		'id'            => 'expanded-sidebar-1',
+		'name'          => __( 'Primary Sidebar Supplement', 'twentyfourteen' ),
+		'id'            => 'sidebar-supplement-1',
 		'description'   => __( 'Main sidebar that appears on the left at wider viewports.', 'twentyfourteen' ),
 		'before_widget' => '<aside id="%1$s" class="widget expanded %2$s">',
 		'after_widget'  => '</aside>',
