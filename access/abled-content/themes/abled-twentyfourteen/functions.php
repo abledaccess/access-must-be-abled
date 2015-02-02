@@ -522,3 +522,14 @@ require get_template_directory() . '/inc/customizer.php';
 if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
 	require get_template_directory() . '/inc/featured-content.php';
 }
+
+/**
+ * Remove redundant title attributes from some WordPress generated links
+ *
+ * @since Abled Twenty Fourteen 1.0
+ */
+	function remove_title_attributes($output) {
+	    return preg_replace('/\s*title\s*=\s*(["\']).*?\1/', '', $output);
+	}
+	add_filter( 'wp_list_categories', 'remove_title_attributes' );
+	add_filter( 'wp_tag_cloud', 'remove_title_attributes' );
