@@ -10,9 +10,13 @@
 	padding-top: 12px;
 }
 .site-info p {
+	color: #fff;
 	font-size: 14px;
 	margin-bottom: 0;
 	text-transform: lowercase;
+}
+.site-info a {
+	color: #fff;
 }
 
 .entry-content,
@@ -37,8 +41,9 @@ h2.site-description,
 .site-description {
 	color: #fff;
 	float: left;
+	font-size: 14px;
 	margin: 0;
-	padding: 18px 18px 12px 18px;
+	padding: 15px 18px 12px 12px;
 	text-transform: lowercase;
 }
 
@@ -248,4 +253,20 @@ label {
 	.search-box .search-field {
 		width: 26.25%;
 	}
+}
+
+/*
+ * Sourced from https://github.com/abledaccess/FOCUS/blob/master/FOCUS.css
+ */
+*:focus,
+a:focus {
+	outline: 3px solid #3cf !important;
+	text-decoration: none !important;
+}
+*:visited,
+*:active, {
+	outline: 0 !important;
+}
+a:focus img {
+	display: inline-block !important; /* to ensure the outline wraps an entire linked image. */
 }
