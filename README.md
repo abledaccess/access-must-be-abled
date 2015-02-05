@@ -1,8 +1,8 @@
-# Abled Twenty Fourteen
+# Access Must Be Abled
 
-"Abled Twenty Fourteen has all of the features as the default Twenty Fourteen WordPress Theme, as far as I've tested -- which isn't as far as it should be to qualify such a statement -- and is hopefully a little more robust when it comes to accessibility concerns."
+This repository contains an entire WordPress installation and a customized version of the 2014 default theme TwentyFourteen, cleverly re-named Abled TwentyFourteen. So the over arching point of this project is to tweak the inclusive features of the TwentyFourteen theme towards the better. But with the added benefit -- or goal -- to allow open criticism, transparent discussion and hopefully an opportunity to learn from mistakes. Hence the title of this repo; Access Must Be Abled.
 
-## Features
+## Abled TwentyFourteen Features
 
 Essentially all these "features" are is additions to the Twenty Fourteen theme that either help me maintain the theme or make what I feel are stronger statements toward accessibility.
 
