@@ -224,18 +224,32 @@ input {
 	top: 0;
 }
 
-.search-box .search-field {
-	width: 70%;
-}
 label {
-	cursor: pointer;
-	font-size: 14px;
+	display: block;
+	font-size: 16px;
 	font-weight: 800;
+	margin-bottom: 6px;
 	text-transform: uppercase;
 }
-.site-header label {
+input[type="text"],
+input[type="search"],
+textarea {
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 0;
+	width: 100%;
+}
+
+textarea {
+	height: 200px;
+}
+.search-box label {
 	color: #fff;
+	cursor: pointer;
 	display: inline;
+	font-size: 14px;
+}
+.search-box .search-field {
+	width: 70%;
 }
 .site-header .search-field {
 	margin-left: 8px;
@@ -246,9 +260,6 @@ label {
 .page-content .search-field {
 	margin-top: 12px;
 }
-.page-content label {
-	font-size: 16px;
-}
 @media screen and (min-width: 783px) {
 	.search-box .search-field {
 		width: 26.25%;
@@ -256,15 +267,14 @@ label {
 }
 
 /*
- * Sourced from https://github.com/abledaccess/FOCUS/blob/master/FOCUS.css
+ * Sourced from https://github.com/abledaccess/FOCUS
  */
 *:focus,
 a:focus {
 	outline: 3px solid #3cf !important;
 	text-decoration: none !important;
 }
-*:visited,
-*:active, {
+*:visited {
 	outline: 0 !important;
 }
 a:focus img {
