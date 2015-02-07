@@ -266,6 +266,53 @@ textarea {
 	}
 }
 
+@media screen and (max-width: 400px) {	
+	.page .content-area {
+		padding-top: 0;
+	}
+	.single .content-area {
+		padding-top: 24px;
+	}
+	.list-view .site-content .entry-header, 
+	.search .page-content, 
+	.error404 .page-content {
+		padding-top: 0;
+	}
+	.page .page-header {
+		padding: 0 10px;
+	}
+	.page .entry-content {
+		padding-top: 24px;
+	}
+	.page-header,
+	.archive-header {
+		border-bottom: 0; 
+		padding-bottom: 0;
+	}
+	.page-title {
+		font-size: 24px;
+	}
+ .list-view .site-content .hentry	{
+		border-bottom: 0;
+		margin: 0;
+		min-height: auto;
+		padding: 0 0 24px;
+	}
+	.search-box label {
+		display: block;
+		margin-bottom: 6px;
+	}
+	.search-box .search-field {
+		width: 100%;
+	}
+	.site-header .search-form {
+		text-align: left;
+	}
+	.content-sidebar {
+		display: none;
+	}
+}
+
 /*
  * Sourced from https://github.com/abledaccess/FOCUS
  */
