@@ -313,6 +313,29 @@ textarea {
 	}
 }
 
+body {
+	background: #fff;
+}
+.site-header,
+.site-footer {
+	max-width: 100%;
+	background-color: #000;
+}
+.header-main,
+.site-info {
+	max-width: 1230px;
+	background-color: #000;
+}
+.site-info {
+	max-width: 1200px;
+}
+.search-box {
+	max-width: 1236px;
+}
+.search-box-wrapper {
+	background-color: #45a433;
+}
+
 /*
  * Sourced from https://github.com/abledaccess/FOCUS
  */

@@ -31,7 +31,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
+<div id="page" class="hfeed">
 	<?php if ( get_header_image() ) : ?>
 	<div id="site-header">
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -69,4 +69,4 @@
 		</div>
 	</header><!-- #masthead -->
 
-	<div id="main" class="site-main">
+	<div id="main" class="site site-main">
