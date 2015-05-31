@@ -349,3 +349,13 @@ a:active {
 a:focus img {
 	display: inline-block !important; /* to ensure the outline wraps an entire linked image. */
 }
+
+.post-meta {
+	display: none;
+}
+.single .post-meta {
+	display: block;
+}
+.post blockquote {
+	font-weight: 400;
+}
