@@ -359,3 +359,21 @@ a:focus img {
 .post blockquote {
 	font-weight: 400;
 }
+
+.logo {
+	color: #55D737;
+	fill: currentColor;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 6px 0 0 14px;
+	width: 2.75em;
+}
+.site-title {
+	padding-left: 53px;
+}
+@media screen and (min-width: 673px) {
+	.logo {
+		padding-left: 30px;
+	}
+}
