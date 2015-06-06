@@ -36,6 +36,7 @@ h1.site-title,
 h2.site-description,
 .site-description {
 	clear: none;
+	padding-left: 8px;
 	text-transform: lowercase;
 }
 .site-description {
@@ -43,7 +44,7 @@ h2.site-description,
 	float: left;
 	font-size: 14px;
 	margin: 0;
-	padding: 15px 18px 12px 12px;
+	padding: 15px 18px 12px 10px;
 	text-transform: lowercase;
 }
 
@@ -363,17 +364,7 @@ a:focus img {
 .logo {
 	color: #55D737;
 	fill: currentColor;
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 7px 0 0 10px;
-	width: 46px;
-}
-.site-title {
-	padding-left: 56px;
-}
-@media screen and (min-width: 673px) {
-	.logo {
-		padding-left: 30px;
-	}
+	float: left;
+	height: 48px;
+	width: 44px;
 }
