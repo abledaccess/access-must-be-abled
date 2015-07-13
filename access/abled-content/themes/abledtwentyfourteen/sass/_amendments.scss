@@ -1,0 +1,373 @@
+/**
+ * 13.0 - Abled abledtwentyfourteen Amendments
+ * -----------------------------------------------------------------------------
+ */
+
+.figcaption {
+	color: #767676;
+	font-size: 14px;
+	line-height: 1.2857142857;
+	margin-top: -16px;
+}
+.site-info p {
+	color: #fff;
+	font-size: 14px;
+	margin-bottom: 0;
+	text-transform: lowercase;
+}
+.site-info a {
+	color: #fff;
+}
+
+.entry-content,
+.entry-summary,
+.page-content,
+.nav-links,
+.comment-content,
+.widget {
+	-webkit-hyphens: none;
+	-moz-hyphens:    none;
+	-ms-hyphens:     none;
+	hyphens:         none;
+}
+
+h1.site-title,
+.site-title,
+h2.site-description,
+.site-description {
+	clear: none;
+	padding-left: 8px;
+	text-transform: lowercase;
+}
+.site-description {
+	color: #fff;
+	float: left;
+	font-size: 14px;
+	margin: 0;
+	padding: 15px 18px 12px 10px;
+	text-transform: lowercase;
+}
+
+.site:before {
+	background-color: #fff;
+}
+.content-area {
+	padding-top: 48px;
+}
+.paging-navigation {
+	margin: 48px 10px;
+}
+#secondary {
+	background-color: #fff;
+	border-top: 0;
+}
+.expanded {
+	display: none;
+}
+.compacted select {
+	font-size: large;
+	width: 100%;
+}
+.widget-title {
+	border-top: 5px solid #000;
+	color: #2b2b2b;
+	padding-top: 8px;
+}
+.primary-sidebar {
+	padding-top: 0;
+}
+.primary-sidebar .widget .widget-title {
+	font-size: 14px;
+}
+.content-sidebar {
+	border: 0;
+	padding-top: 0;
+}
+.widget a {
+	color: #24890d;
+}
+.primary-sidebar .widget_archive li,
+.primary-sidebar .widget_categories li {
+	font-size: 14px;
+	font-weight: 400;
+	padding: 2px 0;
+}
+@media screen and (min-width: 401px) {
+	.compacted {
+		width: 49%;
+	}
+	.compacted.widget_archive {
+		float: left;
+		padding-right: 0.5%;
+	}
+	.compacted.widget_categories {
+		float: right;
+		padding-left: 0.5%;
+	}
+}
+@media screen and (min-width: 673px) {
+	.content-sidebar {
+		padding-top: 55px;
+	}
+}
+@media screen and (min-width: 1008px) {
+	.expanded {
+		display: block;
+	}
+	.compacted {
+		display: none;
+	}
+	.primary-sidebar{
+		padding-top: 55px;
+	}
+}
+
+.entry-meta,
+.entry-meta a {
+	color: #2b2b2b;
+}
+.entry-title {
+	font-weight: 400;
+}
+.list-view .site-content .hentry {
+	border-top: 0;
+}
+.list-view .site-content .hentry:last-child {
+	margin-bottom: 48px;
+}
+.list-view .site-content .entry-header,
+.page .entry-content,
+.search .page-content,
+.error404 .page-content {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	padding-top: 48px;
+}
+.page-header,
+.archive-header {
+	margin-bottom: 24px;
+}
+.page-title {
+	font-weight: 700;
+	font-size: 33px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+h1.entry-title {
+	font-weight: 700;
+}
+.entry-title a {
+	display: inline-block;
+}
+.entry-content a,
+.archive-header a,
+.comments-area a {
+	font-weight: 600;
+}
+.search-box-wrapper {
+	padding-left: 0;
+}
+.search-header,
+.none-header {
+	max-width: 474px;
+	margin: 24px auto;
+}
+.search-title,
+.none-title {
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 1.5;
+	margin: 0;
+}
+.archive-title,
+.search-title,
+.none-title,
+.entry-sub-head {
+	text-transform: uppercase;
+}
+input {
+	padding-right: 0;
+}
+@media screen and (min-width: 401px) {
+	.home .hentry,
+	.archive .hentry,
+	.search .hentry {
+		margin-bottom: 0;
+	}
+	.search-header,
+	.none-header {
+		margin: 0 auto 24px;
+	}
+}
+@media screen and (min-width: 673px) {
+	.search-header,
+	.none-header {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+}
+@media screen and (min-width: 1218px) {
+	.search-header,
+	.none-header {
+		margin-right: 54px;
+	}
+}
+
+.entry-title {
+	padding-top: 24px;
+}
+.entry-header {
+	position: relative;
+}
+.cat-links {
+	position: absolute;
+	top: 48px;
+}
+.single .cat-links {
+	top: 0;
+}
+
+label {
+	display: block;
+	font-size: 16px;
+	font-weight: 800;
+	margin-bottom: 6px;
+	text-transform: uppercase;
+}
+input[type="text"],
+input[type="search"],
+textarea {
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 0;
+	width: 100%;
+}
+
+textarea {
+	height: 200px;
+}
+.search-box label {
+	color: #fff;
+	cursor: pointer;
+	display: inline;
+	font-size: 14px;
+}
+.search-box .search-field {
+	width: 70%;
+}
+.site-header .search-field {
+	margin-left: 8px;
+}
+.site-header .search-form {
+	text-align: right;
+}
+.page-content .search-field {
+	margin-top: 12px;
+}
+@media screen and (min-width: 783px) {
+	.search-box .search-field {
+		width: 26.25%;
+	}
+}
+
+@media screen and (max-width: 400px) {	
+	.page .content-area {
+		padding-top: 0;
+	}
+	.single .content-area {
+		padding-top: 24px;
+	}
+	.list-view .site-content .entry-header, 
+	.search .page-content, 
+	.error404 .page-content {
+		padding-top: 0;
+	}
+	.page .page-header {
+		padding: 0 10px;
+	}
+	.page .entry-content {
+		padding-top: 24px;
+	}
+	.page-header,
+	.archive-header {
+		border-bottom: 0; 
+		padding-bottom: 0;
+	}
+	.page-title {
+		font-size: 24px;
+	}
+ .list-view .site-content .hentry	{
+		border-bottom: 0;
+		margin: 0;
+		min-height: auto;
+		padding: 0 0 24px;
+	}
+	.search-box label {
+		display: block;
+		margin-bottom: 6px;
+	}
+	.search-box .search-field {
+		width: 100%;
+	}
+	.site-header .search-form {
+		text-align: left;
+	}
+	.content-sidebar {
+		display: none;
+	}
+}
+
+body {
+	background: #fff;
+}
+.site-header,
+.site-footer {
+	max-width: 100%;
+	background-color: #000;
+}
+.header-main,
+.site-info {
+	max-width: 1230px;
+	background-color: #000;
+}
+.site-info {
+	max-width: 1200px;
+}
+.search-box {
+	max-width: 1236px;
+}
+.search-box-wrapper {
+	background-color: #45a433;
+}
+
+/*
+ * Sourced from https://github.com/abledaccess/FOCUS
+ */
+*:focus,
+a:focus,
+a:active {
+	outline: 3px solid #3cf !important;
+	text-decoration: none !important;
+}
+a:focus img {
+	display: inline-block !important; /* to ensure the outline wraps an entire linked image. */
+}
+
+.post-meta {
+	display: none;
+}
+.single .post-meta {
+	display: block;
+}
+.post blockquote {
+	font-weight: 400;
+}
+
+.logo {
+	color: #55D737;
+	fill: currentColor;
+	float: left;
+	height: 48px;
+	width: 44px;
+}
+.png-logo {
+	float: left;
+}
