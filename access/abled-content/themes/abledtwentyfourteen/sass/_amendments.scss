@@ -371,3 +371,37 @@ a:focus img {
 .png-logo {
 	float: left;
 }
+
+.menu-toggle::before {
+	display: inline;
+	padding: 16px 8px 16px 16px;
+}
+.menu-toggle {
+	border-left: 1px solid #666;
+	font-size: 15px;
+	overflow: hidden;
+	padding-right: 15px;
+	right: 48px;
+	width: auto;
+}
+.search-toggle {
+	margin-right: -10px;
+}
+
+@media screen and (max-width: 320px) {
+	.site-title {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 673px) {
+	.search-toggle {
+		margin-right: -30px;
+	}
+}
+
+@media screen and (min-width: 783px) {
+	.search-toggle {
+		margin-right: 0;
+	}
+}
