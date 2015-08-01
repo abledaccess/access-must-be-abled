@@ -168,6 +168,15 @@ function abledtwentyfourteen_widgets_init() {
 	register_widget( 'Twenty_Fourteen_Ephemera_Widget' );
 
 	register_sidebar( array(
+		'name'          => __( 'Header Widget Area', 'abledtwentyfourteen' ),
+		'id'            => 'header-widget-1',
+		'description'   => __( 'Appears in the header section of the site.', 'abledtwentyfourteen' ),		
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
+	register_sidebar( array(
 		'name'          => __( 'Primary Sidebar', 'abledtwentyfourteen' ),
 		'id'            => 'sidebar-1',
 		'description'   => __( 'Main sidebar content that is forced below content at narrow viewports.', 'abledtwentyfourteen' ),
