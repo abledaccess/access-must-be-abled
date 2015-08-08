@@ -182,8 +182,8 @@ function abledtwentyfourteen_widgets_init() {
 		'description'   => __( 'Main sidebar content that is forced below content at narrow viewports.', 'abledtwentyfourteen' ),
 		'before_widget' => '<aside id="%1$s" class="widget compacted %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Primary Sidebar Supplement', 'abledtwentyfourteen' ),
@@ -191,8 +191,8 @@ function abledtwentyfourteen_widgets_init() {
 		'description'   => __( 'Main sidebar that appears on the left at wider viewports.', 'abledtwentyfourteen' ),
 		'before_widget' => '<aside id="%1$s" class="widget expanded %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Content Sidebar', 'abledtwentyfourteen' ),
@@ -200,8 +200,8 @@ function abledtwentyfourteen_widgets_init() {
 		'description'   => __( 'Additional sidebar that appears on the right.', 'abledtwentyfourteen' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Footer Widget Area', 'abledtwentyfourteen' ),
@@ -209,8 +209,8 @@ function abledtwentyfourteen_widgets_init() {
 		'description'   => __( 'Appears in the footer section of the site.', 'abledtwentyfourteen' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 }
 add_action( 'widgets_init', 'abledtwentyfourteen_widgets_init' );

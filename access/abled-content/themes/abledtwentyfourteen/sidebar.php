@@ -9,6 +9,8 @@
 ?>
 <div id="secondary">
 
+	<h2 class="screen-reader-text">Date and Category Archives Sidebar</h2>
+
 	<?php if ( has_nav_menu( 'secondary' ) ) : ?>
 	<nav role="navigation" class="navigation site-navigation secondary-navigation">
 		<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
