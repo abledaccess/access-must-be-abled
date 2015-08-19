@@ -407,3 +407,11 @@ a:focus img {
 		margin-right: 0;
 	}
 }
+
+.required {
+    color: #666;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: lowercase;
+}
