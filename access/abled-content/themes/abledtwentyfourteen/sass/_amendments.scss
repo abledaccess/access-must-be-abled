@@ -199,10 +199,12 @@ input {
 	}
 }
 @media screen and (min-width: 673px) {
-	.search-header,
-	.none-header {
+	.search-header {
 		padding-right: 30px;
 		padding-left: 30px;
+	}
+	.none-header {
+		paddding-left: 0;
 	}
 }
 @media screen and (min-width: 1218px) {
@@ -213,7 +215,7 @@ input {
 }
 
 .entry-title {
-	padding-top: 32px;
+	padding-top: 26px;
 }
 .entry-header {
 	position: relative;
@@ -418,4 +420,13 @@ a:focus img {
 
 #secondary {
 	color: #000;
+}
+
+@media screen and (min-width: 401px) {
+	.post-1144 .entry-title a,
+	.post-1148 .entry-title a,
+	.postid-1144 .post-1144 .entry-title,
+	.postid-1148 .post-1148 .entry-title {
+		padding-right: 20%;
+	}
 }
