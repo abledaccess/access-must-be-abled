@@ -42,8 +42,15 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
+		<?php 
+			$written_elsewhere = get_post_meta($post->ID, 'written_elsewhere', true); 
+			if ($written_elsewhere) {
+				the_content($written_elsewhere);
+			} else {
+				the_content("Continue reading &ldquo;" . get_the_title('', '', false) . "&rdquo;..." );
+			}
+		?>
 		<?php
-			the_content("Continue reading &ldquo;" . get_the_title('', '', false) . "&rdquo;..." );
 			wp_link_pages( array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'abledtwentyfourteen' ) . '</span>',
 				'after'       => '</div>',

@@ -160,7 +160,8 @@ h1.entry-title {
 }
 .entry-content a,
 .archive-header a,
-.comments-area a {
+.comments-area a,
+.entry-summary a {
 	font-weight: 600;
 }
 .search-box-wrapper {
@@ -429,4 +430,12 @@ a:focus img {
 	.postid-1148 .post-1148 .entry-title {
 		padding-right: 20%;
 	}
+}
+
+.entry-title a {
+    color: #24890d;
+    text-decoration: underline;
+}
+.entry-title a:hover {
+    text-decoration: none !important;
 }
