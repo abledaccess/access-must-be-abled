@@ -542,3 +542,20 @@ if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow
 	}
 	add_filter( 'wp_list_categories', 'remove_title_attributes' );
 	add_filter( 'wp_tag_cloud', 'remove_title_attributes' );
+
+/**
+ * Prevent default WordPress jump from index and archive pages to post pages
+ *
+ * @since Abled Twenty Fourteen 1.0
+ */
+	function remove_more_jump_link($link) { 
+		$offset = strpos($link, '#more-');
+		if ($offset) {
+			$end = strpos($link, '"',$offset);
+		}
+		if ($end) {
+			$link = substr_replace($link, '', $offset, $end-$offset);
+		}
+		return $link;
+	}
+	add_filter('the_content_more_link', 'remove_more_jump_link');

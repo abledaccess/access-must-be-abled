@@ -47,7 +47,7 @@
 			if ($written_elsewhere) {
 				the_content($written_elsewhere);
 			} else {
-				the_content("Continue reading &ldquo;" . get_the_title('', '', false) . "&rdquo;..." );
+				the_content("Read &ldquo;" . get_the_title('', '', false) . "&rdquo; in its entirety" );
 			}
 		?>
 		<?php

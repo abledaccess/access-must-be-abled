@@ -51,7 +51,7 @@
 	<?php else : ?>
 	<div class="entry-content">
 		<?php
-			the_content("Continue reading &ldquo;" . get_the_title('', '', false) . "&rdquo;..." );
+			the_content("Read &ldquo;" . get_the_title('', '', false) . "&rdquo; in its entirety" );
 			wp_link_pages( array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'abledtwentyfourteen' ) . '</span>',
 				'after'       => '</div>',
