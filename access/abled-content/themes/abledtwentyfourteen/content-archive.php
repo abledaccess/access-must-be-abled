@@ -43,12 +43,7 @@
 	<?php else : ?>
 	<div class="entry-content">
 		<?php 
-			$written_elsewhere = get_post_meta($post->ID, 'written_elsewhere', true); 
-			if ($written_elsewhere) {
-				the_content($written_elsewhere);
-			} else {
-				the_content("Read &ldquo;" . get_the_title('', '', false) . "&rdquo; in its entirety" );
-			}
+			the_content("Read &ldquo;" . get_the_title('', '', false) . "&rdquo; in its entirety" ); 
 		?>
 		<?php
 			wp_link_pages( array(

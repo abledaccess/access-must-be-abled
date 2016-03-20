@@ -37,10 +37,6 @@
 	<div class="entry-content">
 		<?php
 			the_content();
-			$written_elsewhere = get_post_meta($post->ID, 'written_elsewhere', true); 
-			if ($written_elsewhere) {
-				echo $written_elsewhere;
-			};
 			wp_link_pages( array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'abledtwentyfourteen' ) . '</span>',
 				'after'       => '</div>',
