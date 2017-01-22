@@ -127,7 +127,7 @@ h2.site-description,
 	color: #2b2b2b;
 }
 .entry-title {
-	font-weight: 400;
+	font-weight: 700;
 }
 .list-view .site-content .hentry {
 	border-top: 0;
@@ -433,11 +433,12 @@ a:focus img {
 }
 
 .entry-title a {
-    color: #24890d;
-    text-decoration: underline;
+    color: #2b2b2b;
+    text-decoration: none;
 }
 .entry-title a:hover {
-    text-decoration: none !important;
+    color: #24890d;
+    text-decoration: underline;
 }
 
 .more-link {
