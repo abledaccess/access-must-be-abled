@@ -3991,4 +3991,15 @@ input[type="email"] {
 input[type="submit"] {
   margin: 0.75em 0 2em 0; }
 
+textarea[aria-invalid="true"],
+input[aria-invalid="true"] {
+  border: 4px solid #f00; }
+
+.validation_error,
+.validation_message {
+  color: #f00;
+  font-style: italic;
+  font-weight: 900;
+  margin-bottom: 12px; }
+
 /*# sourceMappingURL=style.css.map */
