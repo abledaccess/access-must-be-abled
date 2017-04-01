@@ -379,15 +379,22 @@ a:focus img {
 
 .menu-toggle::before {
 	display: inline;
-	padding: 16px 8px 16px 16px;
+	padding: 16px 8px 16px 2px;
 }
 .menu-toggle {
-	border-left: 1px solid #666;
-	font-size: 15px;
+	border: 2px solid #eee;
+	border-radius: 20px;
+	font-size: 14px;
+	height: auto;
+	margin: 5px 10px 4px 4px;
+	padding: 9px 16px;
 	overflow: hidden;
-	padding-right: 15px;
 	right: 48px;
 	width: auto;
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+	background: #41a62a;
 }
 .search-toggle {
 	margin-right: -10px;
