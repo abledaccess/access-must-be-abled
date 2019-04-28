@@ -11,14 +11,14 @@ module.exports = function(grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'abled-content/themes/abledtwentyfourteen/style.css': 'abled-content/themes/abledtwentyfourteen/sass/style.scss'
+					'wp-content/themes/abledtwentyfourteen/style.css': 'wp-content/themes/abledtwentyfourteen/sass/style.scss'
 				}
 			}
 		},
 
 		watch: {
 			css: {
-				files: 'abled-content/themes/abledtwentyfourteen/sass/*.scss',
+				files: 'wp-content/themes/abledtwentyfourteen/sass/*.scss',
 				tasks: ['sass'],
 			},
 		},
